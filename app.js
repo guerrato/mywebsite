@@ -24,6 +24,7 @@ app.use(sassMiddleware({
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
+console.log(__dirname)
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
