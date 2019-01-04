@@ -9,7 +9,7 @@ jobs:
         - dev
         - staging
         - master
-        - features/*
+        - features\/.*/
     steps:
       - checkout
       - run:
